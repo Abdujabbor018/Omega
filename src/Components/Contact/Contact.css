@@ -1,3 +1,80 @@
 .contact{
     background-color: #413E65;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-circle{
+    position: absolute;
+        animation: rotate 6s linear infinite;
+        left: 430px;
+        top: 5050px;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.contact-img{
+    padding-top: 150px;
+}
+.contact-inp{width: 445px;
+height: 70px;
+border-radius: 10px;
+border-width: 1px;
+    padding-left: 20px;
+}
+.contact-btn{
+    width: 445px;
+height: 60px;
+opacity: 1;
+top: 91px;
+font-weight: 500;
+font-size: 21px;
+line-height: 100%;
+letter-spacing: -0.66px;
+
+    border-radius: 10px;
+    border: none;
+    background-color: #F04037;
+    color: white;
+    cursor: pointer;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -40px;
+    gap: 20px;
+}
+.contact-text{
+font-weight: 700;
+font-size: 60px;
+line-height: 70px;
+letter-spacing: -1.88px;
+color: white;
+margin-bottom: 40px;
+position: relative;
+left: -10px;
+}
+.contact-info{
+font-weight: 400;
+font-size: 21px;
+line-height: 39px;
+letter-spacing: -0.66px;
+color: white;
+margin-bottom: 40px;
+
+}
+.contact-texts{
+    display: flex;
+    flex-direction: column;
 }
