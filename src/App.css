@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'CircularStd';
+  src: url('./assets/fonts/circular-std-medium-500.ttf') format('truetype');
+  font-weight: 500; 
+  font-style: normal;
+  font-display: swap;
+}
+*{
+  font-family: 'CircularStd', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+}

@@ -1,0 +1,81 @@
+.hero {
+    background-color: rgba(65, 62, 101, 1);
+    padding-bottom: 190px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+
+}
+
+.hero-card {
+    background-color: white;
+    width: 389px;
+    height: 154px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hero-card-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #19191B;
+    padding-bottom: 20px;
+}
+
+.hero-card-info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #696871;
+}
+
+.hero-card-img {
+    position: relative;
+    bottom: 10px;
+}
+.hero-texts{
+    position: relative;
+    top: 80px;
+}
+.hero-text{
+font-weight: 700;
+font-size: 60px;
+line-height: 70px;
+color: #FFFFFF;
+padding-bottom: 30px;
+}
+.hero-info{
+font-weight: 400;
+font-size: 21px;
+line-height: 39px;
+letter-spacing: -0.66px;
+color: #FFFFFF;
+padding-bottom: 30px;
+}
+.hero-button{
+    width: 195px;
+height: 60px;
+border-radius: 5px;
+border-width: 1px;
+border: none;
+background-color: #F04037;
+font-weight: 500;
+font-size: 21px;
+line-height: 100%;
+text-align: center;
+color: #FFFFFF;
+}

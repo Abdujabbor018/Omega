@@ -1,0 +1,59 @@
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.section-text {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+        color: #19191B;
+        padding-bottom: 30px;
+}
+
+.section-info {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 39px;
+    color: #696871;
+    padding-bottom: 30px;
+
+}
+
+.circle {
+    position: absolute;
+    animation: rotate 6s linear infinite;
+    left: 640px;
+    top: 2100px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.section-button {
+    width: 201px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F04037;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: -0.66px;
+    text-align: center;
+    color: white;
+}
+
+.section-img {
+    width: 600px;
+    height: 630px;
+}

@@ -1,0 +1,77 @@
+.info {
+  background: #f7f9fc;
+  padding: 80px 0;
+}
+
+.info-text {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  position: relative;
+  right: 100px;
+}
+
+.info-card {
+    width: 348px;
+    height: 80px;
+    padding-left: 20px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.info-card-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #f1f3f9;
+}
+
+
+.info-card:nth-child(1) {
+  grid-column: 2 / span 2;
+}
+.info-card:nth-child(2) {
+  grid-column: 4 / span 2;
+}
+.info-card:nth-child(3) {
+  grid-column: 6 / span 2;
+}
+
+.info-card:nth-child(4) {
+  grid-column: 3 / span 2;
+}
+.info-card:nth-child(5) {
+  grid-column: 5 / span 2;
+}
+
+.info-card:nth-child(6) {
+  grid-column: 2 / span 2;
+}
+.info-card:nth-child(7) {
+  grid-column: 4 / span 2;
+}
+.info-card:nth-child(8) {
+  grid-column: 6 / span 2;
+}
+
