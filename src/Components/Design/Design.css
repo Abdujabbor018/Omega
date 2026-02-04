@@ -52,6 +52,7 @@
     text-align: center;
     color: #FFFFFF;
     border: none;
+    cursor: pointer;
 }
 
 .modal-overlay {

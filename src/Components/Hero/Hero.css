@@ -112,7 +112,9 @@ body.dark .hero-info {
 }
 
 body.dark .hero-button {
-    background-color: #ef4444; 
+    background-color: transparent; 
+    border-color: #F04037;
+    border: 3px solid;
 }
 @media screen and (max-width: 1024px) {
     .hero-container {

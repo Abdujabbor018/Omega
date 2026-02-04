@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    position: relative;
 }
 
 .header {
@@ -176,26 +176,26 @@ body.dark .header-button {
         height: 700px;
     }
     .header-texts {
-        left: 0; /* Markazga yaqinlashtiramiz */
+        left: 0;
+        text-align: center;
         top: 80px;
         padding: 0 20px;
     }
     .header-text {
         font-size: 40px;
         line-height: 50px;
+        text-align: center;
     }
-    .header-text br, .header-info br {
-        display: none; /* Qator buzilmasligi uchun br ni o'chiramiz */
-    }
+
     input {
-        width: 400px; /* Inputni kichraytiramiz */
+        width: 400px; 
     }
     .header-button {
-        right: 120px; /* Tugmani inputga moslaymiz */
+        right: 120px; 
     }
 }
 
-/* --- 480px: Mobil qurilmalar --- */
+
 @media screen and (max-width: 480px) {
     .header {
         height: auto;
@@ -216,7 +216,7 @@ body.dark .header-button {
         line-height: 28px;
     }
     form {
-        flex-direction: column; /* Input va tugma ustma-ust */
+        flex-direction: column; 
         gap: 15px;
     }
     input {
@@ -226,9 +226,49 @@ body.dark .header-button {
         padding-left: 15px;
     }
     .header-button {
-        position: static; /* Absolyut pozitsiyadan voz kechamiz */
+        position: relative; 
         width: 100%;
         max-width: 320px;
-        padding-left: 20px; /* Animatsiya markazda bo'lishi uchun */
+        padding-left: 20px; 
+        right: 100px;
+    }
+}
+
+.circle-header {
+    position: absolute;
+    animation: rotate 6s linear infinite;
+    left: 610px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header-up{
+    position: relative;
+    left: 900px;
+    top: 400px;
+    animation: floatUpDown 1s ease-in-out infinite;
+    cursor: pointer;
+}
+.header-up:hover {
+    animation-play-state: paused;
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+    100% {
+        transform: translateY(0);
     }
 }
