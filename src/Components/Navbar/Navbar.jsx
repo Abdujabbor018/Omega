@@ -63,11 +63,7 @@ const Navbar = () => {
           </ul>
 
           <div className="navbar-items">
-            <select className="lang-select">
-              <option value="uz">UZ</option>
-              <option value="ru">RU</option>
-              <option value="en">EN</option>
-            </select>
+            
 
             <button className="theme-btn" onClick={toggleTheme}>
               {dark ? "☀️" : "🌙"}
