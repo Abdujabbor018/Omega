@@ -31,13 +31,13 @@ const Footer = () => {
                                 About
                             </li>
                             <li className="footer-item">
-                                <a href="" className="footer-link">Our mission</a>
+                                <a href="#Contact" className="footer-link">Our mission</a>
                             </li>
                             <li className="footer-item">
-                                <a href="" className="footer-link">Our story</a>
+                                <a href="#Review" className="footer-link">Our story</a>
                             </li>
                             <li className="footer-item">
-                                <a href="" className="footer-link">Team Members</a>
+                                <a href="#Section" className="footer-link">Team Members</a>
                             </li>
                         </div>
                         <div className="ul-footer-list">
@@ -45,13 +45,13 @@ const Footer = () => {
 Learn
                             </li>
                             <li className="footer-item">
-                                <a href="" className="footer-link">Tutorials</a>
+                                <a href="#Design" className="footer-link">Tutorials</a>
                             </li>
                             <li className="footer-item">
-                                <a href="" className="footer-link">How it works</a>
+                                <a href="#Hero" className="footer-link">How it works</a>
                             </li>
                             <li className="footer-item">
-                                <a href="" className="footer-link">F.A.Q</a>
+                                <a href="#Info" className="footer-link">F.A.Q</a>
                             </li>
 
                         </div>

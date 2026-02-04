@@ -11,7 +11,7 @@ import Icon8 from './img/Icon (10).png'
 const Info = () => {
     return (
         <>
-            <div className="info">
+            <div className="info" id='Info'>
                 <div className="container">
                     <div className="info-container">
 

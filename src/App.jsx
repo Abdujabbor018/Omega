@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import Aos from 'aos'
 import Navbar from './Components/Navbar/Navbar'
 import Header from './Components/Header/Header'
 import Hero from './Components/Hero/Hero'

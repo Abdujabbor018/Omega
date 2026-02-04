@@ -1,0 +1,40 @@
+.get-started-button {
+    width: 201px;
+    height: 60px;
+
+}
+button{
+      position: relative;
+      color: #333;
+      overflow: hidden;
+      background: transparent;
+      z-index: 1;
+      border: 1px solid #333;
+      padding: 12px 24px;
+      font-family: sans-serif;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: white;
+      transform: scale(1.07);
+    }
+
+    button::before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 100%;
+      background: #333;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s ease;
+    }
+
+    button:hover::before {
+      width: 100%;
+    }

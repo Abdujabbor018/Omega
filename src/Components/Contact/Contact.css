@@ -8,13 +8,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .contact-circle {
     position: absolute;
     animation: rotate 6s linear infinite;
-    left: 430px;
-    top: 5050px;
+    left: 330px;
+
 }
 
 @keyframes rotate {
@@ -52,6 +53,7 @@
     background-color: #F04037;
     color: white;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .contact-form {
@@ -87,4 +89,78 @@
     display: flex;
     flex-direction: column;
 }
+body.dark .contact-btn:hover{
+background-color: red;
+transform: scale(1.07);
+}
+@media screen and (max-width: 1200px) {
+    .contact-circle {
+        left: 25%;
+    }
+    .contact-form {
+        left: 0;
+    }
+}
 
+@media screen and (max-width: 1024px) {
+    .contact-text {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .contact-img {
+        width: 400px;
+        height: auto;
+    }
+    .contact-circle {
+        left: 200px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-img {
+        padding-top: 50px;
+        width: 100%;
+        max-width: 400px;
+    }
+    .contact-circle {
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+    }
+    .contact-text {
+        font-size: 38px;
+        line-height: 48px;
+        left: 0;
+    }
+    .contact-text br, .contact-info br {
+        display: none;
+    }
+    .contact-form {
+        left: 0;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-inp, .contact-btn {
+        width: 100%;
+        max-width: 445px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-text {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .contact-info {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .contact-btn {
+        font-size: 18px;
+    }
+}

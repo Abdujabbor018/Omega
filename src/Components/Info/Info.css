@@ -75,3 +75,82 @@
   grid-column: 6 / span 2;
 }
 
+/* INFO SECTION DARK MODE */
+body.dark .info {
+    background: #0f172a; /* qoraygan section background */
+    transition: 0.3s;
+}
+
+/* INFO TEXT DARK */
+body.dark .info-text {
+    color: #f0f0f0;
+}
+
+/* INFO CARD DARK */
+body.dark .info-card {
+    background: rgba(255,255,255,0.05); /* qisman qoraygan kartalar */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+/* INFO CARD TEXT DARK */
+body.dark .info-card p {
+    color: #f0f0f0;
+}
+
+/* INFO CARD IMAGE DARK (agar fon ishlatilsa) */
+body.dark .info-card-img {
+    background: rgba(255,255,255,0.1);
+}
+
+/* INFO CARD HOVER DARK */
+body.dark .info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+@media screen and (max-width: 1024px) {
+    .info-cards {
+        grid-template-columns: repeat(4, 1fr);
+        right: 0;
+        padding: 0 20px;
+    }
+    .info-card {
+        width: 100%;
+        grid-column: span 2 !important;
+    }
+    .info-text {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .info-card {
+        grid-column: span 2 !important;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .info-text {
+        font-size: 35px;
+    }
+    .info-text br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+    .info-card {
+        grid-column: span 1 !important;
+        height: 70px;
+    }
+    .info-text {
+        font-size: 28px;
+    }
+}

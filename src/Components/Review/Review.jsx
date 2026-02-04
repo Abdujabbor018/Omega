@@ -6,7 +6,7 @@ import User2 from './img/PHOTO (1).png'
 const Review = () => {
     return (
         <>
-            <div className="review">
+            <div className="review" id='Review'>
                 <div className="container">
                     <div className="review-container">
                         <div className="review-top">

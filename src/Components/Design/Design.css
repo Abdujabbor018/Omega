@@ -1,16 +1,18 @@
-.design-container{
+.design-container {
     padding-top: 150px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 100px;
+    position: relative;
 }
-.circle-img{
+
+.circle-img {
     position: absolute;
-        animation: rotate 6s linear infinite;
-        left: 680px;
-        top: 3340px;
+    animation: rotate 6s linear infinite;
+    left: 580px;
 }
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -20,31 +22,185 @@
         transform: rotate(360deg);
     }
 }
-.design-text{
-font-weight: 700;
-font-size: 60px;
-line-height: 70px;
-color: #19191B;
-padding-bottom: 35px;
+
+.design-text {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #19191B;
+    padding-bottom: 35px;
 }
-.design-info{
-font-weight: 400;
-font-size: 21px;
-line-height: 39px;
-color: #696871;
-padding-bottom: 35px;
+
+.design-info {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 39px;
+    color: #696871;
+    padding-bottom: 35px;
 
 }
-.design-button{
-width: 201px;
-height: 60px;
-border-radius: 5px;
-border-width: 1px;
-background-color: #F04037;
-font-weight: 500;
-font-size: 21px;
-line-height: 100%;
-text-align: center;
-color: #FFFFFF;
-border: none;
+
+.design-button {
+    width: 201px;
+    height: 60px;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: #F04037;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal {
+    background: white;
+    color: #19191B;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+body.dark .modal {
+    background: #020617;
+    color: #f0f0f0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.modal form {
+    display: flex;
+    gap: 10px;
+}
+
+
+.modal input {
+    flex: 1;
+    height: 50px;
+    padding-left: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.modal h2 {
+    padding-bottom: 20px;
+}
+
+.modal input:focus {
+    outline: none;
+    border-color: #F04037;
+}
+
+body.dark .modal input {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark .modal input::placeholder {
+    color: #cbd5e1;
+}
+
+.modal button {
+    width: 120px;
+    height: 50px;
+    background: #F04037;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal button:hover {
+    background-color: #d7372f;
+}
+
+
+body.dark .modal button {
+    background: #ef4444;
+}
+
+body.dark .modal button:hover {
+    background-color: #dc2626;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #19191B;
+    transition: color 0.3s;
+}
+
+body.dark .modal-close {
+    color: #f0f0f0;
+}
+
+body.dark .section-button {
+    width: 201px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    border-color: #F04037;
+    border: 3px solid;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: -0.66px;
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width: 1200px) {
+    .circle-img {
+        left: 48%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .design-img {
+        width: 450px;
+    }
+    .circle-img {
+        left: 420px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .design-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .circle-img {
+        left: 50%;
+        top: 25%; /* Rasm orqasida markazda turadi */
+        transform: translate(-50%, -50%);
+        width: 200px;
+    }
+    .design-img {
+        width: 100%;
+        max-width: 400px;
+    }
 }

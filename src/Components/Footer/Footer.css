@@ -118,3 +118,59 @@
     transform: scaleX(1);
 }
 
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        padding: 0 40px;
+        gap: 30px;
+    }
+    .footer-list, .ul-footer-list {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-wrap: wrap; /* Ustunlar sig'masa pastga tushadi */
+        justify-content: flex-start;
+        padding: 0 20px;
+        gap: 40px;
+    }
+    .footer-list, .ul-footer-list {
+        margin-top: 40px;
+        min-width: 140px; /* Ustunlar kengligi */
+    }
+    .footer-name {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        flex-direction: column; /* Mobil telefonda hammasi bitta qatorda */
+        align-items: center;
+        text-align: center;
+    }
+    .footer-list, .ul-footer-list {
+        margin-top: 30px;
+        align-items: center;
+    }
+    .effect .buttons {
+        justify-content: center;
+    }
+    .footer-link::before {
+        display: none; /* Mobilda hover effekti xalaqit bermasligi uchun */
+    }
+}
+
+/* Dark mode uchun footer moslashuvi (agar dark class ishlatsang) */
+body.dark .footer-name, 
+body.dark .footer-link {
+    color: #ffffff;
+}
+body.dark .footer-item {
+    color: #cbd5e1;
+}
+body.dark .footer-link:hover {
+    color: #F04037;
+}
